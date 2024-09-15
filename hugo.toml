@@ -18,3 +18,19 @@ target = 'content'
 source = 'nokit-drawing-pad/docs'
 target = 'content/docs/projects/drawing-pad'
 
+[[module.mounts]]
+source = 'nokit-perseverance-rover/docs'
+target = 'content/docs/projects/perseverance-rover'
+
+[[module.mounts]]
+source = 'nokit-microscope/docs'
+target = 'content/docs/projects/microscope'
+
+[[module.mounts]]
+source = 'nokit-camera/docs'
+target = 'content/docs/projects/camera'
+
+[[module.mounts]]
+source = 'nokit-thermal-camera/docs'
+target = 'content/docs/projects/thermal-camera'
+

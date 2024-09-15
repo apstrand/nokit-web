@@ -1,0 +1,20 @@
+[submodule "nokit-drawing-pad"]
+	path = nokit-drawing-pad
+	url = https://github.com/apstrand/nokit-drawing-pad.git
+	branch = main
+[submodule "nokit-perseverance-rover"]
+	path = nokit-perseverance-rover
+	url = https://github.com/apstrand/nokit-perseverance-rover.git
+	branch = main
+[submodule "nokit-microscope"]
+	path = nokit-microscope
+	url = https://github.com/apstrand/nokit-microscope.git
+	branch = main
+[submodule "nokit-camera"]
+	path = nokit-camera
+	url = https://github.com/apstrand/nokit-camera.git
+	branch = main
+[submodule "nokit-thermal-camera"]
+	path = nokit-thermal-camera
+	url = https://github.com/apstrand/nokit-thermal-camera.git
+	branch = main
