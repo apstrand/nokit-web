@@ -1,0 +1,32 @@
+name: 'Generate and deploy'
+ 
+on:
+  push:
+    branches: [ main ]
+ 
+jobs:
+  deploy-website:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Do a git checkout including submodules
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+ 
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+ 
+      - name: Build Hugo
+        run: hugo --minify
+
+      - name: rsync deployments
+        uses: burnett01/rsync-deployments@7.0.1
+        with:
+          switches: -avzr --delete
+          path: public/
+          remote_path: web/nokit/
+          remote_host: wonko.nena.se
+          remote_user: peter
+          remote_key: ${{ secrets.DEPLOY_KEY }}
