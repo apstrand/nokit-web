@@ -16,21 +16,21 @@ target = 'content'
 
 [[module.mounts]]
 source = 'nokit-drawing-pad/docs'
-target = 'content/docs/projects/drawing-pad'
+target = 'content/docs/idea/drawing-pad'
 
 [[module.mounts]]
 source = 'nokit-perseverance-rover/docs'
-target = 'content/docs/projects/perseverance-rover'
+target = 'content/docs/completed/perseverance-rover'
 
 [[module.mounts]]
 source = 'nokit-microscope/docs'
-target = 'content/docs/projects/microscope'
+target = 'content/docs/in-progress/microscope'
 
 [[module.mounts]]
 source = 'nokit-camera/docs'
-target = 'content/docs/projects/camera'
+target = 'content/docs/idea/camera'
 
 [[module.mounts]]
 source = 'nokit-thermal-camera/docs'
-target = 'content/docs/projects/thermal-camera'
+target = 'content/docs/completed/thermal-camera'
 
