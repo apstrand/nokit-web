@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Site
 type: docs
 ---
 
