@@ -52,7 +52,6 @@ resampleFilter = "CatmullRom"
 quality = 75
 anchor = "smart"
 
-
 [languages]
 [languages.en]
 languageName = "English"
@@ -77,8 +76,8 @@ description = "Building stuff from scratch"
 # Everything below this are Site Params
 
 # Comment out if you don't want the "print entire section" link enabled.
-[outputs]
-section = ["HTML", "print", "RSS"]
+# [outputs]
+# section = ["HTML", "print", "RSS"]
 
 [params]
 # privacy_policy = "https://policies.google.com/privacy"
@@ -105,7 +104,7 @@ version = "0.1"
 url_latest_version = "https://nokit.org"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/apstrand/nokit-web"
+# github_repo = "https://github.com/apstrand/nokit-web"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
 # github_project_repo = "https://github.com/apstrand/nokit-web"
 
@@ -134,9 +133,12 @@ navbar_logo = true
 # Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the homepage.
 navbar_translucent_over_cover_disable = false
 # Enable to show the side bar menu in its compact state.
-sidebar_menu_compact = false
+sidebar_menu_compact = true
 # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
-sidebar_search_disable = false
+sidebar_search_disable = true
+
+showLightDarkModeMenu = true
+
 
 [params.ui.feedback]
 enable = false
@@ -153,11 +155,11 @@ enable = false
 #  desc = "Discussion and help from your fellow users"
 
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
-[[params.links.developer]]
-  name = "GitHub"
-  url = "https://github.com/aostrand/nokit-web"
-  icon = "fab fa-github"
-  desc = "Development takes place here!"
+#[[params.links.developer]]
+#  name = "GitHub"
+#  url = "https://github.com/aostrand/nokit-web"
+#  icon = "fab fa-github"
+#  desc = "Development takes place here!"
 
 
 
@@ -176,21 +178,21 @@ target = 'content'
 
 [[module.mounts]]
 source = 'nokit-drawing-pad/docs'
-target = 'content/docs/projects/idea/drawing-pad'
+target = 'content/projects/drawing-pad'
 
 [[module.mounts]]
 source = 'nokit-perseverance-rover/docs'
-target = 'content/docs/projects/completed/perseverance-rover'
+target = 'content/projects/perseverance-rover'
 
 [[module.mounts]]
 source = 'nokit-microscope/docs'
-target = 'content/docs/projects/in-progress/microscope'
+target = 'content/projects/microscope'
 
 [[module.mounts]]
 source = 'nokit-camera/docs'
-target = 'content/docs/projects/idea/camera'
+target = 'content/projects/camera'
 
 [[module.mounts]]
 source = 'nokit-thermal-camera/docs'
-target = 'content/docs/projects/completed/thermal-camera'
+target = 'content/projects/thermal-camera'
 
