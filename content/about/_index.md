@@ -1,8 +1,10 @@
 ---
-title: "Background"
-weight: 50
+title: "About"
+type: docs
+menu:
+  main:
+    weight: 80
 ---
-# Background
 
 We (family of four with two kids age 4&7) enjoy building and creating things and have lately started to dive deeper into electronics (an old hobby of mine that has been dormant for a few decades while working as software developer). This site describes a number of projects in various stages of completion that we have taken on or are considering.
 
@@ -10,7 +12,7 @@ The name of this site, nokit, or No Kit, comes from the idea that learning is be
 
 However, I’m by no mean a fundamentalist about doing everything from scratch. Many projects use microcontrollers and high level integrated circuits even where it would be possible to use only discrete components or simpler ICs. I think there’s a place for both bottom-up and top-down learning, not everything has to be done in the order it might be presented in a text book - sometimes it’s better to be able to move on with the current project and come back for a deep dive later[^1]. The goal is to do projects that are fun, contain some interesting aspect or new idea each, and collectively build up to a thorough understanding of electronics and computing.
 
-## Project statuses
+## Project status
 
  - *idea*: Anything not started, from a sketch-on-a-napkin to initial design.
  - *in progress*: Projects we are currently building. While we try to not have too many things going at he same time (see below about completion), there are inevitable delays waiting for deliveries and motivation might come and go.
