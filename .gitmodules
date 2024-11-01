@@ -18,3 +18,6 @@
 	path = nokit-thermal-camera
 	url = https://github.com/apstrand/nokit-thermal-camera.git
 	branch = main
+[submodule "nokit-pyputer"]
+	path = nokit-pyputer
+	url = https://github.com/apstrand/nokit-pyputer.git
