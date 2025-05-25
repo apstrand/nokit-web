@@ -24,6 +24,7 @@ jobs:
           
       - name: Setup and update projects
         run: |
+          cd docusaurus
           chmod +x ./setup-and-update-projects.sh
           ./setup-and-update-projects.sh
           
@@ -34,17 +35,17 @@ jobs:
           cache: npm
           
       - name: Install dependencies
-        run: npm ci
+        run: cd docusaurus && npm ci
         
       - name: Build
-        run: npm run build
+        run: cd docusaurus && npm run build
         
 
       - name: rsync deployments
         uses: burnett01/rsync-deployments@7.0.1
         with:
           switches: -avzr --delete
-          path: public/
+          path: docusaurus/public/
           remote_path: web/nokit/
           remote_host: wonko.nena.se
           remote_user: peter
