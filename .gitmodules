@@ -1,0 +1,3 @@
+[submodule "docusaurus/_projects/perseverance-rover-repo"]
+	path = docusaurus/_projects/perseverance-rover-repo
+	url = https://github.com/apstrand/nokit-perseverance-rover.git
